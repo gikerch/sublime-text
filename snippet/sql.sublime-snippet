@@ -1,0 +1,28 @@
+<snippet>
+    <content><![CDATA[
+import sqlalchemy
+from sqlalchemy import create_engine
+
+# mysql链接
+try:   
+    engine = create_engine('${1:mysql+pymysql}://zhouwei:root@localhost:3306/ip')
+    c = engine.connect()
+    conn = c.connection
+except Exception as e:
+    print e
+
+# 数据库插入函数
+def Insert(sqls, engine):
+    try:
+        for insert_sql in sqls:
+            engine.execute(insert_sql)
+        #print(insert_sql)
+    except Exception as e:
+        return e
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>sql</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <description>数据库</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+list = '\n'.join(new_ip)  # 加入换行符,更改list变量名称
+today = datetime.date.today().isoformat()  # 写入日期
+f = open('${1:}.txt','a+')  # 文件读写模式
+f.write('\n'+today+'\n')
+f.writelines(new)
+f.close()
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>writelist</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <description>列表逐行写入</description>
+</snippet>

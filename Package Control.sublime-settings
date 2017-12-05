@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"AutoDocstring",
+		"ChineseLocalizations",
+		"Colorsublime",
+		"IMESupport",
+		"Markdown Preview",
+		"Material Theme",
+		"Package Control",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-pyflakes",
+		"SublimeREPL",
+		"Terminal",
+		"Theme - Spacegray",
+		"Vue Syntax Highlight",
+		"Vuejs Snippets",
+		"WakaTime"
+	]
+}
